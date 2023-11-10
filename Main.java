@@ -1,6 +1,11 @@
+import com.sun.source.tree.NewArrayTree;
+
 import javax.swing.*;
 import java.security.spec.RSAOtherPrimeInfo;
+import java.time.LocalDate;
+import java.time.Period;
 import java.util.Arrays;
+import java.util.Locale;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -3005,37 +3010,450 @@ public class Main {
 //            }
 //        }
 //    }
+//        Scanner scanner = new Scanner(System.in);
+//
+//        Person person1 = new Person();
+//        person1.name = scanner.nextLine();
+//        person1.surname = scanner.nextLine();
+//        person1.age = scanner.nextInt();
+//
+//
+//        Person person2 = new Person();
+//        person2.name = scanner.next();
+//        person2.surname = scanner.next();
+//        person2.age = scanner.nextInt();
+//
+//        Person person3 = new Person();
+//        person3.name = scanner.next();
+//        person3.surname = scanner.next();
+//        person3.age = scanner.nextInt();
+//
+//
+//        int [] massiv = new int[3];
+//        Person[] people = new Person[]{person1,person2,person3};
+//        for (Person people1:people) {
+//            System.out.println(people1);
+//        }
+//
+//        int [] massiv2 = new int[3];
+//         Person[] people1 = new Person[]{person1,person2,person3};
+//        for (Person a:people1) {
+//            //          System.out.println(a.DateBurn());
+//        }
 
 
-        Person person1 = new Person();
-        person1.floor = "Men";
-        person1.age = 20;
-        person1.colorSkin = "white";
-        person1.placeOfBirth = "Canada";
-
-        Person person2 = new Person();
-        person2.floor = "Women";
-        person2.age = 24;
-        person2.colorSkin = "red";
-        person2.placeOfBirth = "British";
-
-        Person person3 = new Person();
-        person3.floor = "Men";
-        person3.age = 55;
-        person3.colorSkin = "black";
-        person3.placeOfBirth = "America";
+//
+//        Triangle triangle = new Triangle();
+//        triangle.a=10;
+//        System.out.println("Сторона треугольника (а) равна:"+triangle.a);
+//        triangle.b=9;
+//        System.out.println("Сторона треугольника (b) равна:"+triangle.b);
+//        triangle.c=8;
+//        System.out.println("Сторона треугольника (c) равна:"+triangle.c);
+//        triangle.area(triangle);
 
 
-        int [] massiv = new int[3];
-        Person[] people = new Person[]{person1,person2,person3};
-        for (Person people1:people) {
-            System.out.println(people1);
-        }
+//        Scanner scanner = new Scanner(System.in);
+//        Pasport pasport = new Pasport();
+//        pasport.name = scanner.nextLine();
+//        pasport.surname = scanner.nextLine();
+//        pasport.lastName = scanner.nextLine();
+//        pasport.lie = scanner.nextLine();
+//        pasport.BurnCountry = scanner.nextLine();
+//        pasport.id = scanner.nextInt();
+//        pasport.Dateburn = scanner.nextInt();
+//
+//        int [] massiv = new int[0];
+//         Pasport[] pasports = new Pasport[]{pasport};
+//        for (Pasport a: pasports) {
+//                      System.out.println(a);
+//        }
+
+
+//        Scanner scanner = new Scanner(System.in);
+//        Students student1 = new Students();
+//        student1.name = scanner.nextLine();
+//        student1.group = scanner.nextLine();
+//        student1.age = scanner.nextInt();
+//
+//
+//        Students student2 = new Students();
+//        student2.name = scanner.nextLine();
+//        student2.group = scanner.nextLine();
+//        student2.age = scanner.nextInt();
+//
+//
+//        Students student3 = new Students();
+//        student3.name = scanner.next();
+//        student3.group = scanner.next();
+//        student3.age = scanner.nextInt();
+//
+//
+//        Students student4 = new Students();
+//        student4.name = scanner.next();
+//        student4.group = scanner.next();
+//        student4.age = scanner.nextInt();
+//
+//
+//        Students student5 = new Students();
+//        student5.name = scanner.next();
+//        student5.group = scanner.next();
+//        student5.age = scanner.nextInt();
+
+//        Students[] students = new Students[5];
+//        Students students1;
+//        for (int i = 0; i < students.length; i++) {
+//            students1 = new Students();
+//            System.out.println("name ");
+//            String name = new Scanner(System.in).nextLine();
+//            students1.name = name;
+//            System.out.println("age ");
+//            students1.age = new Scanner(System.in).nextInt();
+//            System.out.println("group ");
+//            students1.group = new Scanner(System.in).nextLine();
+//            students[i] = students1;
+//        }
+//
+//
+//        int[] massiv = new int[4];
+//
+//
+//        int aa = 0;
+//        int bb = 0;
+//        for (int i = 0; i < students.length; i++) {
+//            if (students[i].group.contains("Java")) {
+//                aa++;
+//            } else {
+//                bb++;
+//            }
+//        }
+//        System.out.println("java " + aa + " and js " +bb);
+//
+//        int age = 0;
+//        for (int i = 0; i < students.length; i++) {
+//             age += students[i].age;
+//        }
+//
+//        System.out.println(age/students.length);
+
+//        int medium = student1.age+student2.age+student3.age+student4.age+student5.age;
+//        float mediumage = medium/5f;
+//
+//        System.out.println("В групе Java учится :" + aa + " студентав");
+//        System.out.println("В групе Js учится :" + bb + " студентав");
+//        System.out.println("Среднее арифметическое возраста среди студентов:" + mediumage);
+
+//        LocalDate dateOfbirth = LocalDate.of(2000, 1, 1);
+
+//        Student[] students = new Student[1];
+//        Student students1;
+//        for (int i = 0; i < students.length; i++) {
+//            students1 = new Student();
+//            System.out.println("name ");
+//            String name = new Scanner(System.in).nextLine();
+//            students1.name = name;
+//            System.out.println("nattionality");
+//            students1.nationality = new Scanner(System.in).nextLine();
+//            System.out.println("year ");
+//            int year = new Scanner(System.in).nextInt();
+//            System.out.println("month ");
+//            int month = new Scanner(System.in).nextInt();
+//            System.out.println("day ");
+//            int day = new Scanner(System.in).nextInt();
+//            LocalDate date = LocalDate.of(year, month, day);
+//            students1.dateofbirth = date;
+//            System.out.println("phonenumber");
+//            students1.phonenumber = new Scanner(System.in).nextInt();
+//            students[i] = students1;
+//        }
+//
+//        for (int i = 0; i < students.length; i++) {
+//            LocalDate now = LocalDate.now();
+//            System.out.println(Period.between(students[i].dateofbirth,now).getYears());
+//        }
+
+//        System.out.println("Ведите месяц с помощью цифры!");
+//
+//        int seasons_num = scanner.nextInt();
+//
+//        Seasons seasons = new Seasons();
+//        seasons.number(seasons_num);
+
+
+//        Rectange rectange = new Rectange();
+//        rectange.setLength(5);
+//        rectange.setWidht(5);
+//        rectange.square();
+//        Scanner scanner = new Scanner(System.in);
+//
+//      Student student = new Student();
+//        System.out.print("Имя :");
+//        student.setName(scanner.next());
+//        System.out.print("Фамиля :");
+//        student.setSurname(scanner.next());
+//        System.out.print("Возрасть :");
+//        student.setAge(scanner.nextInt());
+//        System.out.print("Ваши уроки :");
+//        student.setCourses(new String[]{scanner.next()});
+//
+//        System.out.println(student.getName());
+//        System.out.println(student.getSurname());
+//        System.out.println(student.getAge());
+//        System.out.println(Arrays.toString(student.getCourses()));
+
+
+//          ИНКАПСУЛЯЦИЯ
+
+
+//         Student student1 = new Student(("sdcec",18,"Zhusupov", "fsfe", "rvevr");
+
+//Scanner scanner = new Scanner(System.in);
+//
+//      Courses course1 = new Courses("Java", 10);
+//      Courses course2 = new Courses("Python", 20);
+//      Courses course3 = new Courses("C++", 30);
+//      Courses course4 = new Courses("C#", 40);
+//      Courses course5 = new Courses("JavaScript", 50);
+//      Courses courses7 = new Courses("PHP", 60);
+//      Courses courses8 = new Courses("HTML", 70);
+//      Courses courses9 = new Courses("CSS", 80);
+//      Courses courses10 = new Courses("SQL", 90);
+//      Courses courses11 = new Courses("Ruby", 100);
+//
+//
+//
+//      Teacher teacher1 = new Teacher("John", "Java", 10);
+//      Teacher teacher2 = new Teacher("Jack", "Java", 20);
+//      Teacher teacher3 = new Teacher("Jim", "C++", 30);
+//      Teacher teacher4 = new Teacher("James", "C#", 40);
+//      Teacher teacher5 = new Teacher("Jill", "JavaScript", 50);
+//      Teacher teacher6 = new Teacher("Jenny", "PHP", 60);
+//      Teacher teacher7 = new Teacher("Jade", "HTML", 70);
+//      Teacher teacher8 = new Teacher("Jasmine", "CSS", 80);
+//      Teacher teacher9 = new Teacher("Jocelyn", "SQL", 90);
+//      Teacher teacher10 = new Teacher("Abdy", "Ruby", 100);
+//
+//      teacher1.setCourses(course1);
+//      teacher2.setCourses(course2);
+//      teacher3.setCourses(course3);
+//      teacher4.setCourses(course4);
+//      teacher5.setCourses(course5);
+//      teacher6.setCourses(courses7);
+//      teacher7.setCourses(courses8);
+//      teacher8.setCourses(courses9);
+//      teacher9.setCourses(courses10);
+//
+//      course1.setTeacher(teacher1);
+//      course2.setTeacher(teacher2);
+//      course3.setTeacher(teacher3);
+//      course4.setTeacher(teacher4);
+//      course5.setTeacher(teacher5);
+//      courses7.setTeacher(teacher6);
+//      courses8.setTeacher(teacher7);
+//      courses9.setTeacher(teacher8);
+//      courses10.setTeacher(teacher9);
+//      courses11.setTeacher(teacher10);
+//
+//
+//      Student student1 = new Student("John", 16, "address1");
+//      Student student2 = new Student("Jack", 20, "address2");
+//      Student student3 = new Student("Jim", 30, "address3");
+//      Student student4 = new Student("James", 40, "address4");
+//      Student student5 = new Student("Jill", 50, "address5");
+//      Student student6 = new Student("Jenny", 60, "address6");
+//      Student student7 = new Student("Jade", 70, "address7");
+//
+//      student1.setCourses(new Courses[]{course1, course2});
+//      student2.setCourses(new Courses[]{course2, course3});
+//      student3.setCourses(new Courses[]{course3, course4});
+//      student4.setCourses(new Courses[]{course4, course5});
+//      student5.setCourses(new Courses[]{course5, courses7});
+//      student6.setCourses(new Courses[]{courses7, courses8});
+//      student7.setCourses(new Courses[]{courses8, courses9});
+//
+//
+//      Datebase database = new Datebase();
+//      database.setCourses(new Courses[]{course1, course2, course3, course4, course5, courses7, courses8, courses9, courses10, courses11});
+//      database.setTeachers(new Teacher[]{teacher1, teacher2, teacher3, teacher4, teacher5, teacher6, teacher7, teacher8, teacher9, teacher10});
+//      database.setStudents(new Student[]{student1, student2, student3, student4, student5, student6, student7});
+//
+//      System.out.println(database.addNewTeacher(new Teacher("Jolene", "Ruby", 100)));
+//      while (true) {
+//        System.out.println("""
+//                        | 1. Add new teacher
+//                        | 2. Add new student
+//                        | 3. Add new course
+//                        | 4. Remove teacher
+//                        | 5. Remove student
+//                        | 6. Remove course
+//                        | 7. Update teacher
+//                        | 8. Update student
+//                        | 9. Update course********
+//                        |10. Find Teacher by name
+//                        |11. Find Student by name
+//                        |12. Find Course by name
+//                        |13. Find Teacher by specialization
+//                     """);
+//
+//        System.out.println("Enter your choice: ");
+//        int choice = scanner.nextInt();
+//        switch (choice)
+//        {
+//          case 1:
+//            System.out.println("Enter teacher name: ");
+//            String name = scanner.next();
+//            System.out.println("Enter teacher specialization: ");
+//            String specialization = scanner.next();
+//            System.out.println("Enter teacher stage: ");
+//            int stage = scanner.nextInt();
+//            Teacher teacher = new Teacher(name, specialization, stage);
+//            System.out.println(database.addNewTeacher(teacher));
+//            break;
+//          case 2:
+//            System.out.println("Enter student name: ");
+//            String name1 = scanner.next();
+//            System.out.println("Enter student age: ");
+//            int age = scanner.nextInt();
+//            System.out.println("Enter student address: ");
+//            String address = scanner.next();
+//            Student student = new Student(name1, age, address);
+//            System.out.println(database.addNewStudent(student));
+//            break;
+//          case 3:
+//            System.out.println("Enter course name: ");
+//            String name2 = scanner.next();
+//            System.out.println("Enter number of students: ");
+//            int numberOfStudents = scanner.nextInt();
+//            Courses courses = new Courses(name2, numberOfStudents);
+//            System.out.println(database.addNewCourse(courses));
+//            break;
+//          case 4:
+//            System.out.println("Enter teacher name: ");
+//            String name3 = scanner.next();
+//            System.out.println("Enter teacher specialization: ");
+//            String specialization1 = scanner.next();
+//            System.out.println("Enter teacher stage: ");
+//            int stage1 = scanner.nextInt();
+//            Teacher teacher11 = new Teacher(name3, specialization1, stage1);
+//            System.out.println(database.removeTeacher(teacher11));
+//            break;
+//          case 5:
+//            System.out.println("Enter student name: ");
+//            String name4 = scanner.next();
+//            System.out.println("Enter student age: ");
+//            int age1 = scanner.nextInt();
+//            System.out.println("Enter student address: ");
+//            String address1 = scanner.next();
+//            Student student11 = new Student(name4, age1, address1);
+//            System.out.println(database.removeStudent(student11));
+//          case 6:
+//            System.out.println("Enter course name: ");
+//            String name5 = scanner.next();
+//            System.out.println("Enter number of students: ");
+//            int numberOfStudents1 = scanner.nextInt();
+//            Courses courses12 = new Courses(name5, numberOfStudents1);
+//            System.out.println(database.removeCourse(courses12));
+//            break;
+//            case 7:
+//                String nameTeacher = scanner.next();
+//                String spec = scanner.next();
+//                int stage11 = scanner.nextInt();
+//                Teacher teahcer = new Teacher(nameTeacher,spec,stage11);
+//                database.updateTeacher("John", teahcer);
+//                break;
+//            case 8:
+//                String nameStudent = scanner.next();
+//                int age221 = scanner.nextInt();
+//                String adress = scanner.next();
+//                Student student8 = new Student(nameStudent,age221,adress);
+//                database.updateStudent("John", student8);
+//                break;
+//            case 9:
+//                String nameCourse = scanner.next();
+//                int numberOfStudents11 = scanner.nextInt();
+//                Courses courses1 = new Courses(nameCourse,numberOfStudents11);
+//                database.updateCourse("Java", courses1);
+//                break;
+//            case 10:
+//                System.out.println("Enter teacher name:");
+//                String namee = scanner.next();
+//                database.findTeacherByName(namee);
+//                break;
+//            case 11:
+//                System.out.println("Enter student name:");
+//                String nameee = scanner.next();
+//                database.findStudentByName(nameee);
+//                break;
+//            case 12:
+//                System.out.println("Enter course name:");
+//                String nameeee = scanner.next();
+//                database.findCourseByName(nameeee);
+//                break;
+//          case 13:
+//              System.out.println("Enter spec name::");
+//              String specc = scanner.next();
+//              database.findTeacherBySpec(specc);
+//                break;
+//
+//
+//
+//        }
+//      }
+
+
+      Book book1 = new Book(1,"a",1,2000,"A");
+      Book book2 = new Book(2,"b",2,2001,"B");
+      Book book3 = new Book(3,"c",3,2002,"C");
+
+      Library library1 = new Library(11, "AA");
+      Library library2 = new Library(12, "AB");
+      Library library3 = new Library(13,"AC");
+
+      library1.setBooks(new Book[]{book1,book2,book3});
+        library1.findbookByName("b");
+        System.out.println(Arrays.toString(library1.getBooks()));
+
+//      Book [] books = {book1, book2, book3};
+//      library1.setBooks(books);
+//      System.out.println(Arrays.toString(library1.getBooks()));
+//      library1.addBook(new Book(4,"cc", 4, 2003, "D"));
+//      System.out.println(Arrays.toString(library1.getBooks()));
+//      library1.deleteBookByName("a");
+//      System.out.println(Arrays.toString(library1.getBooks()));
+
+
+
+
+
+//        int target = 5;
+//        int[] massiv = {2,3,5,7,2,0};
+//        for (int i = 0; i < massiv.length; i++) {
+//            for (int j = i; j < massiv.length ; j++) {
+//                if (massiv[i] + massiv[j] == target) {
+//                    System.out.print(i+" ");
+//                    System.out.print(j+ " ");
+//                }
+//            }
+//        }
+
+
+
+
+
+
+
 
 
     }
-
 }
+
+
+
+
+
+
+
+
 
 
 
